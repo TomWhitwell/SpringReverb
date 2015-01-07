@@ -4,4 +4,4 @@ This repository contains PCB files for the Music Thing Spring Reverb project.
 
 Full documentation at [Music Thing Modular](http://musicthing.co.uk/modular/?page_id=579)  
 
-Please report any issues 
+Please [report any issues in the Issue Log](https://github.com/TomWhitwell/SpringReverb/issues)  
