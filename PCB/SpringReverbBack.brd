@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -21608,6 +21608,9 @@ design rules under a new name.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="25mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="-"/>
 <param name="PrefDir.2" value="0"/>
@@ -21709,7 +21712,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="38.608" y="24.257" size="1.778" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="36.59340625" y="24.3181" size="0.8128" layer="27" rot="R90"/>
 </element>
-<element name="TO:INPUT" library="con-lumberg" package="BTOR1" value="TO_TANK" x="12.7" y="21.59" smashed="yes" rot="MR315">
+<element name="TO_INPUT" library="con-lumberg" package="BTOR1" value="TO_TANK" x="12.7" y="21.59" smashed="yes" rot="MR315">
 <attribute name="OC_NEWARK" value="96K7172" x="5.5158" y="1.833434375" size="1.778" layer="28" rot="MR315" display="off"/>
 <attribute name="MPN" value="BTOR 1" x="5.5158" y="1.833434375" size="1.778" layer="28" rot="MR315" display="off"/>
 <attribute name="MF" value="" x="5.5158" y="1.833434375" size="1.778" layer="28" rot="MR315" display="off"/>
@@ -21719,7 +21722,7 @@ design rules under a new name.</description>
 </element>
 <element name="R3" library="TomW" package="0207/10" value="2.2k" x="24.13" y="20.32"/>
 <element name="C3" library="TomW" package="C050-024X044" value="10n" x="21.59" y="22.86" rot="R180"/>
-<element name="TO:OUTPUT" library="con-lumberg" package="BTOR1" value="FROM_TANK" x="12.7" y="6.35" smashed="yes" rot="MR45">
+<element name="TO_OUTPUT" library="con-lumberg" package="BTOR1" value="FROM_TANK" x="12.7" y="6.35" smashed="yes" rot="MR45">
 <attribute name="OC_NEWARK" value="96K7172" x="12.7" y="6.35" size="1.778" layer="28" rot="MR45" display="off"/>
 <attribute name="MPN" value="BTOR 1" x="12.7" y="6.35" size="1.778" layer="28" rot="MR45" display="off"/>
 <attribute name="MF" value="" x="12.7" y="6.35" size="1.778" layer="28" rot="MR45" display="off"/>
@@ -21814,7 +21817,7 @@ design rules under a new name.</description>
 </elements>
 <signals>
 <signal name="N$4">
-<contactref element="TO:INPUT" pad="S"/>
+<contactref element="TO_INPUT" pad="S"/>
 <contactref element="C3" pad="2"/>
 <contactref element="IC4_DRV_RCVR" pad="1"/>
 <contactref element="U$15" pad="P$1"/>
@@ -21835,7 +21838,7 @@ design rules under a new name.</description>
 <wire x1="16.51" y1="24.765" x2="16.235534375" y2="25.12553125" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$7">
-<contactref element="TO:OUTPUT" pad="T"/>
+<contactref element="TO_OUTPUT" pad="T"/>
 <contactref element="IC4_DRV_RCVR" pad="5"/>
 <contactref element="R5" pad="2"/>
 <contactref element="U$21" pad="P$1"/>
@@ -21871,7 +21874,7 @@ design rules under a new name.</description>
 <wire x1="36.83" y1="6.1321" x2="36.83" y2="7.62" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$5">
-<contactref element="TO:INPUT" pad="T"/>
+<contactref element="TO_INPUT" pad="T"/>
 <contactref element="C2" pad="1"/>
 <contactref element="R3" pad="1"/>
 <contactref element="IC4_DRV_RCVR" pad="2"/>
@@ -22049,7 +22052,7 @@ design rules under a new name.</description>
 <contactref element="POWER" pad="4"/>
 <contactref element="R5" pad="1"/>
 <contactref element="R4" pad="2"/>
-<contactref element="TO:OUTPUT" pad="S"/>
+<contactref element="TO_OUTPUT" pad="S"/>
 <contactref element="D3" pad="C"/>
 <contactref element="D4" pad="A"/>
 <contactref element="JP5" pad="2"/>

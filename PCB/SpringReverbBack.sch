@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -8131,10 +8131,10 @@ Cermet, abgedichtet nach IP67</description>
 <part name="POWER" library="TomW" deviceset="10_PIN_HEADER" device=""/>
 <part name="C2" library="SparkFun-Passives" deviceset="CAP_POL" device="PTH2" value="10uf"/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
-<part name="TO:INPUT" library="con-lumberg" deviceset="BTOR1" device="" value="TO_TANK"/>
+<part name="TO_INPUT" library="con-lumberg" deviceset="BTOR1" device="" value="TO_TANK"/>
 <part name="R3" library="TomW" deviceset="R-EU_" device="STANDARD_RESISTOR" value="2.2k"/>
 <part name="C3" library="TomW" deviceset="C-EU" device="050-024X044" value="10n"/>
-<part name="TO:OUTPUT" library="con-lumberg" deviceset="BTOR1" device="" value="FROM_TANK"/>
+<part name="TO_OUTPUT" library="con-lumberg" deviceset="BTOR1" device="" value="FROM_TANK"/>
 <part name="R4" library="TomW" deviceset="R-EU_" device="STANDARD_RESISTOR" value="22R"/>
 <part name="C8" library="SparkFun-Passives" deviceset="CAP_POL" device="PTH2" value="22uf"/>
 <part name="R5" library="TomW" deviceset="R-EU_" device="STANDARD_RESISTOR" value="4.7k"/>
@@ -8295,14 +8295,14 @@ spring drive is set low. </text>
 <instances>
 <instance part="C2" gate="G$1" x="33.02" y="71.12"/>
 <instance part="SUPPLY4" gate="GND" x="38.1" y="43.18"/>
-<instance part="TO:INPUT" gate="G$1" x="81.28" y="88.9" rot="MR180"/>
+<instance part="TO_INPUT" gate="G$1" x="81.28" y="88.9" rot="MR180"/>
 <instance part="R3" gate="G$1" x="68.58" y="86.36" rot="R90"/>
 <instance part="C3" gate="G$1" x="68.58" y="93.98" rot="R180"/>
 <instance part="IC4_DRV_RCVR" gate="B" x="147.32" y="96.52" smashed="yes">
 <attribute name="NAME" x="146.812" y="100.203" size="1.778" layer="95"/>
 <attribute name="VALUE" x="143.002" y="95.758" size="1.778" layer="96"/>
 </instance>
-<instance part="TO:OUTPUT" gate="G$1" x="116.84" y="91.44" smashed="yes" rot="MR0">
+<instance part="TO_OUTPUT" gate="G$1" x="116.84" y="91.44" smashed="yes" rot="MR0">
 <attribute name="NAME" x="121.92" y="92.71" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="121.92" y="86.36" size="1.778" layer="96" rot="MR0"/>
 </instance>
@@ -8361,7 +8361,7 @@ spring drive is set low. </text>
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<pinref part="TO:OUTPUT" gate="G$1" pin="2"/>
+<pinref part="TO_OUTPUT" gate="G$1" pin="2"/>
 <wire x1="139.7" y1="43.18" x2="132.08" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="43.18" x2="127" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="127" y1="43.18" x2="119.38" y2="43.18" width="0.1524" layer="91"/>
@@ -8447,7 +8447,7 @@ spring drive is set low. </text>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="TO:INPUT" gate="G$1" pin="2"/>
+<pinref part="TO_INPUT" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="99.06" x2="78.74" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="93.98" x2="78.74" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="99.06" x2="68.58" y2="99.06" width="0.1524" layer="91"/>
@@ -8464,7 +8464,7 @@ spring drive is set low. </text>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="TO:OUTPUT" gate="G$1" pin="1"/>
+<pinref part="TO_OUTPUT" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="91.44" x2="119.38" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="93.98" x2="119.38" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="99.06" x2="127" y2="99.06" width="0.1524" layer="91"/>
@@ -8505,7 +8505,7 @@ spring drive is set low. </text>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="TO:INPUT" gate="G$1" pin="1"/>
+<pinref part="TO_INPUT" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="88.9" x2="78.74" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="81.28" x2="78.74" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="96.52" x2="33.02" y2="96.52" width="0.1524" layer="91"/>
